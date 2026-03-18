@@ -1,0 +1,121 @@
+query,category,timestamp
+"Where is my order?? it's been 5 days",Delivery Delay,2024-03-15
+"Payment failed but money deducted, pls check",Payment Failure,2024-03-12
+"Hey I want refund asap",Refund Request,2024-03-08
+"Product quality is not good at all",Product Issue,2024-03-18
+"How to cancel subscription?",Subscription Issue,2024-03-10
+"Bhai mere order ka kya hua? Track nhi ho rha",Order Tracking,2024-03-14
+"My package shows delivered but I didn't receive anything!!!",Delivery Delay,2024-03-17
+"The product i got is damaged badly need replacement",Product Issue,2024-03-11
+"refund kab milega??? already 10 days ho gye",Refund Request,2024-03-09
+"When will u restock the blue color variant",General Query,2024-03-16
+"Order #12345 status plz",Order Tracking,2024-03-13
+"I was charged twice for same order wtf",Payment Failure,2024-03-07
+"Can I change my delivery address? Order not shipped yet",Order Tracking,2024-03-15
+"Wrong item delivered! I ordered size M got size S",Product Issue,2024-03-12
+"why is delivery taking so long its been a week",Delivery Delay,2024-03-10
+"How do I pause my subscription for 2 months",Subscription Issue,2024-03-14
+"Product description says water resistant but it's not working",Product Issue,2024-03-09
+"Yaar refund process kitna time leta hai",Refund Request,2024-03-11
+"my order stuck in transit since 4 days any update?",Delivery Delay,2024-03-16
+"Payment successful but order not placed",Payment Failure,2024-03-08
+"Do you ship to Tier 3 cities",General Query,2024-03-13
+"Subscription renewed but I cancelled it last month!!",Subscription Issue,2024-03-17
+"Product broke after 2 days of use pathetic quality",Product Issue,2024-03-15
+"where's my refund it's been 2 weeks since return",Refund Request,2024-03-12
+"Is there any discount code available right now",General Query,2024-03-10
+"Order was supposed to arrive yesterday where is it",Delivery Delay,2024-03-14
+"Hey can u track my order for me",Order Tracking,2024-03-09
+"I need invoice for my last purchase",General Query,2024-03-16
+"The color is completely different from website photos",Product Issue,2024-03-11
+"Money got deducted 3 times but only 1 order placed help!",Payment Failure,2024-03-13
+"How to upgrade my subscription plan",Subscription Issue,2024-03-08
+"Ordered 3 items received only 2 where is 3rd one",Product Issue,2024-03-15
+"Refund initiated when will i get money in account",Refund Request,2024-03-17
+"Delivery partner is not responding to calls",Delivery Delay,2024-03-12
+"What is the return policy",General Query,2024-03-10
+"My tracking link is not working",Order Tracking,2024-03-14
+"Can i cancel my order its not shipped yet",Order Tracking,2024-03-09
+"subscription charge kyu hua i didnt renew",Subscription Issue,2024-03-16
+"Product smell is weird and chemical like",Product Issue,2024-03-11
+"Still waiting for refund approval been 5 days",Refund Request,2024-03-13
+"Expected delivery was today but no update",Delivery Delay,2024-03-08
+"Payment page froze but money deducted check plz",Payment Failure,2024-03-15
+"What size should i order im 5'8 and 75kg",General Query,2024-03-17
+"Why my order is still in processing",Order Tracking,2024-03-12
+"I want to return this item its not as expected",Refund Request,2024-03-10
+"Delivery guy marked delivered but didn't come",Delivery Delay,2024-03-14
+"Wrong product sent completely different from what i ordered",Product Issue,2024-03-09
+"How many days for delivery to Pune",General Query,2024-03-16
+"Transaction failed multiple times unable to place order",Payment Failure,2024-03-11
+"Can I change my subscription delivery date",Subscription Issue,2024-03-13
+"The stitching is coming off after 1 wash",Product Issue,2024-03-08
+"Haven't received refund yet its been 3 weeks",Refund Request,2024-03-15
+"Is my order confirmed or not? no confirmation mail received",Order Tracking,2024-03-17
+"Delivery delayed by 5 days this is unacceptable",Delivery Delay,2024-03-12
+"Charged for premium but not getting premium features",Subscription Issue,2024-03-10
+"Product size chart is wrong i ordered as per chart but doesn't fit",Product Issue,2024-03-14
+"How to get refund for cancelled order",Refund Request,2024-03-09
+"Order shows out for delivery since morning but not delivered yet",Delivery Delay,2024-03-16
+"Are your products vegan and cruelty free",General Query,2024-03-11
+"Kab tak aayega mera order?",Order Tracking,2024-03-13
+"Payment deducted twice pls refund extra amount",Payment Failure,2024-03-08
+"Subscription auto renewed without notification",Subscription Issue,2024-03-15
+"Product arrived broken box was damaged too",Product Issue,2024-03-17
+"Refund credited to wrong account",Refund Request,2024-03-12
+"Why is there no movement on my tracking since 3 days",Delivery Delay,2024-03-10
+"What's the difference between basic and premium plan",General Query,2024-03-14
+"Can u tell me where my package is right now",Order Tracking,2024-03-09
+"Order got cancelled automatically but money not refunded",Payment Failure,2024-03-16
+"How to unsubscribe i dont want it anymore",Subscription Issue,2024-03-11
+"Quality is very poor not worth the price",Product Issue,2024-03-13
+"When will my refund be processed",Refund Request,2024-03-08
+"Delivery expected today but now showing tomorrow why",Delivery Delay,2024-03-15
+"Do you have cash on delivery option",General Query,2024-03-17
+"My order id is not working on tracking page",Order Tracking,2024-03-12
+"Bank statement shows deduction but order failed",Payment Failure,2024-03-10
+"Subscription benefits are not activated",Subscription Issue,2024-03-14
+"Received expired product check manufacturing date",Product Issue,2024-03-09
+"Applied for refund 10 days ago no response",Refund Request,2024-03-16
+"Delivery agent called said address wrong but its correct",Delivery Delay,2024-03-11
+"Can I buy this product offline anywhere",General Query,2024-03-13
+"Still no update on my order placed 4 days back",Order Tracking,2024-03-08
+"Paid through UPI but order pending",Payment Failure,2024-03-15
+"How much does subscription cost per month",Subscription Issue,2024-03-17
+"Material quality is cheap looks fake",Product Issue,2024-03-12
+"Need refund urgently have to buy again",Refund Request,2024-03-10
+"Why delivery taking so much time",Delivery Delay,2024-03-14
+"Is there warranty on this product",General Query,2024-03-09
+"Bro track my order number AB12345",Order Tracking,2024-03-16
+"Payment successful but got error message confused",Payment Failure,2024-03-11
+"Cant login to my subscription account",Subscription Issue,2024-03-13
+"Packaging was open when received",Product Issue,2024-03-08
+"Refund amount is less than what i paid",Refund Request,2024-03-15
+"Out for delivery since 2 days what does that mean",Delivery Delay,2024-03-17
+"Do u ship internationally",General Query,2024-03-12
+"Where is my order its urgent",Order Tracking,2024-03-10
+"Transaction declined but amount on hold",Payment Failure,2024-03-14
+"When does subscription renew",Subscription Issue,2024-03-09
+"Color fading after first wash",Product Issue,2024-03-16
+"Refund status batao please",Refund Request,2024-03-11
+"Estimated delivery passed 3 days ago",Delivery Delay,2024-03-13
+"Hi",Ambiguous,2024-03-08
+"Need help",Ambiguous,2024-03-15
+"Hello there",Ambiguous,2024-03-17
+"Issue with my order",Ambiguous,2024-03-12
+"Not satisfied",Ambiguous,2024-03-10
+"This is wrong",Ambiguous,2024-03-14
+"What to do now",Ambiguous,2024-03-09
+"Please help me urgent",Ambiguous,2024-03-16
+"Problem",Ambiguous,2024-03-11
+"Check my account",Ambiguous,2024-03-13
+"My order is delayed and also the product quality seems bad from reviews",Delivery Delay,2024-03-15
+"Payment failed but i want to reorder can u help",Payment Failure,2024-03-17
+"Order not delivered yet and i need refund if it doesn't come today",Delivery Delay,2024-03-12
+"Wrong item received and delivery was also very late",Product Issue,2024-03-10
+"Subscription charged but order not placed what is this",Subscription Issue,2024-03-14
+"Refund pending and customer service not responding",Refund Request,2024-03-09
+"My order tracking shows delivered but product is damaged",Product Issue,2024-03-16
+"Payment got deducted twice and order is also delayed",Payment Failure,2024-03-11
+"Product damaged plus refund not processed yet very disappointed",Product Issue,2024-03-13
+"Order delayed already and now asking for more money for faster delivery??",Delivery Delay,2024-03-08

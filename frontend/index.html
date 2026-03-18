@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Intelligence Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Customer Intelligence Dashboard</h1>
+
+        <!-- Section 1: Dashboard Overview -->
+        <section id="dashboard-section">
+            <h2>Query Distribution Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Queries Analyzed</h3>
+                    <p id="total-queries-count">-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Unique Categories</h3>
+                    <p id="unique-categories-count">-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Data Period</h3>
+                    <p id="data-period">-</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="distributionChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+
+        <!-- Section 2: Single Query Classifier -->
+        <section id="classifier-section">
+            <h2>Classify New Query</h2>
+            <form id="query-form">
+                <label for="new-query">Enter Customer Query:</label>
+                <textarea id="new-query" rows="3" placeholder="Type a customer query here..."></textarea>
+                <button type="submit">Classify with AI</button>
+            </form>
+            <div id="classification-result" class="result-box hidden">
+                <h3>Classification Result:</h3>
+                <p><strong>Query:</strong> <span id="result-query"></span></p>
+                <p><strong>Predicted Category:</strong> <span id="result-category"></span></p>
+                <p><strong>Confidence:</strong> <span id="result-confidence"></span></p>
+                <p><strong>Reasoning:</strong> <span id="result-reasoning"></span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
