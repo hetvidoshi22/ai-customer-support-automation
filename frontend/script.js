@@ -18,109 +18,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Function to Load and Display Dashboard Data ---
     async function loadDashboardData() {
-        try {
-            console.log("Fetching dashboard data...");
-            const response = await fetch(`${API_BASE_URL}/dashboard`);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            
-            const data = await response.json();
-            console.log("Dashboard data received:", data);
+    try {
+        const response = await fetch(`${API_BASE_URL}/dashboard`);
+        const data = await response.json();
 
-            if(data.success) {
-                // Update summary stats
-                totalQueriesEl.textContent = data.summary.total_queries;
-                uniqueCategoriesEl.textContent = data.summary.unique_categories;
-                // Format the date range nicely
-                const startDate = new Date(data.summary.date_range.start).toLocaleDateString();
-                const endDate = new Date(data.summary.date_range.end).toLocaleDateString();
-                dataPeriodEl.textContent = `${startDate} to ${endDate}`;
+        if (data.success) {
+            const dashboard = data.data;
 
-                // Prepare data for Chart.js
-                const categories = data.distribution.map(item => item.category);
-                const counts = data.distribution.map(item => item.count);
-                const percentages = data => item.percentage);
+            totalQueriesEl.textContent = dashboard.summary.total_queries;
+            uniqueCategoriesEl.textContent = dashboard.summary.unique_categories;
+            dataPeriodEl.textContent =
+                dashboard.summary.date_range.start + " → " +
+                dashboard.summary.date_range.end;
 
-                // Destroy existing chart if it exists to prevent duplication
-                if (distributionChart) {
-                    distributionChart.destroy();
+            const labels = dashboard.distribution.map(d => d.category);
+            const values = dashboard.distribution.map(d => d.count);
+
+            if (distributionChart) distributionChart.destroy();
+
+            distributionChart = new Chart(distributionChartCtx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values
+                    }]
                 }
+            });
 
-                // Create the chart
-                distributionChart = new Chart(distributionChartCtx, {
-                    type: 'bar', // You can change this to 'pie' or 'doughnut'
-                    data: {
-                        labels: categories,
-                        datasets: [{
-                            label: 'Number of Queries',
-                            data: counts,
-                            backgroundColor: [
-                                'rgba(52, 152, 219, 0.7)', // Blue
-                                'rgba(231, 76, 60, 0.7)',  // Red
-                                'rgba(46, 204, 113, 0.7)', // Green
-                                'rgba(155, 89, 182, 0.7)', // Purple
-                                'rgba(241, 196, 15, 0.7)', // Yellow
-                                'rgba(230, 126, 34, 0.7)', // Orange
-                                'rgba(149, 165, 166, 0.7)', // Grey
-                                'rgba(127, 140, 141, 0.7)'  // Dark Grey
-                            ],
-                            borderColor: [
-                                'rgba(52, 152, 219, 1)',
-                                'rgba(231, 76, 60, 1)',
-                                'rgba(46, 204, 113, 1)',
-                                'rgba(155, 89, 182, 1)',
-                                'rgba(241, 196, 15, 1)',
-                                'rgba(230, 126, 34, 1)',
-                                'rgba(149, 165, 166, 1)',
-                                'rgba(127, 140, 141, 1)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) {
-                                        const dataset = context.dataset;
-                                        const index = context.dataIndex;
-                                        const percentage = percentages[index];
-                                        return `${dataset.label}: ${dataset.data[index]} (${percentage}%)`;
-                                    }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                title: {
-                                    display: true,
-                                    text: 'Number of Queries'
-                                }
-                            },
-                            x: {
-                                title: {
-                                    display: true,
-                                    text: 'Category'
-                                }
-                            }
-                        }
-                    }
-                });
-            } else {
-                alert(`Error loading dashboard: ${data.error || 'Unknown error'}`);
-            }
-        } catch (error) {
-            console.error('Failed to load dashboard data:', error);
-            alert(`Failed to load dashboard data: ${error.message}`);
+        } else {
+            alert("Dashboard error");
         }
+
+    } catch (error) {
+        console.error(error);
+        alert("Failed to load dashboard");
     }
+}
 
 
     // --- Function to Handle Query Classification ---
