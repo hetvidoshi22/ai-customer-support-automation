@@ -26,54 +26,56 @@ DATA_FILE_PATH = os.path.join(BASE_DIR, 'data', 'customer_support_dataset.csv')
 dashboard_cache = None
 
 
-@app.route('/')
-def home():
-    return "🚀 API Running"
+def generate_auto_response(category):
+    responses = {
+        "Delivery Delay": "🚚 Your order is on the way. We apologize for the delay.",
+        "Refund Request": "💰 Your refund is being processed.",
+        "Order Tracking": "📦 You can track your order via your tracking link.",
+        "Product Issue": "⚠️ Please share product images for resolution.",
+        "Payment Failure": "💳 Try another payment method.",
+        "Subscription Issue": "🔄 Manage subscription in settings.",
+        "General Query": "ℹ️ Our team will assist you.",
+        "Ambiguous": "❓ Please provide more details."
+    }
+    return responses.get(category, "Support team will assist you.")
 
 
-@app.route('/api/dashboard', methods=['GET'])
-def get_dashboard_data():
+def escalation_logic(category, confidence):
+    if category == "Ambiguous" or confidence < 0.6:
+        return "⚠️ Escalated to Human Agent"
+    return "✅ Handled by AI"
+
+
+@app.route('/api/dashboard')
+def dashboard():
     global dashboard_cache
 
-    try:
-        if dashboard_cache is None:
-            logger.info("Loading dataset...")
-            dashboard_cache = load_and_analyze_data(DATA_FILE_PATH)
+    if dashboard_cache is None:
+        dashboard_cache = load_and_analyze_data(DATA_FILE_PATH)
 
-        return jsonify({
-            "success": True,
-            "data": dashboard_cache
-        })
-
-    except Exception as e:
-        logger.exception("Dashboard error")
-        return jsonify({"success": False, "error": str(e)}), 500
+    return jsonify({"success": True, "data": dashboard_cache})
 
 
 @app.route('/api/classify', methods=['POST'])
-def classify_new_query():
-    try:
-        data = request.get_json()
-        query_text = data.get("query", "").strip()
+def classify():
+    data = request.get_json()
+    query = data.get("query", "").strip()
 
-        if not query_text:
-            return jsonify({"success": False, "error": "Query required"}), 400
+    if not query:
+        return jsonify({"success": False, "error": "Query required"})
 
-        category = classify_query_with_gemini(query_text)
+    category = classify_query_with_gemini(query)
+    confidence = 0.9 if category != "Ambiguous" else 0.5
 
-        confidence = 0.9 if category != "Ambiguous" else 0.5
-
-        return jsonify({
-            "success": True,
-            "original_query": query_text,
-            "predicted_category": category,
-            "confidence": confidence,
-            "reasoning": f"Classified as {category}"
-        })
-
-    except Exception as e:
-        logger.exception("Classification error")
-        return jsonify({"success": False, "error": str(e)}), 500
+    return jsonify({
+        "success": True,
+        "original_query": query,
+        "predicted_category": category,
+        "confidence": confidence,
+        "reasoning": f"Classified as {category}",
+        "auto_response": generate_auto_response(category),
+        "escalation": escalation_logic(category, confidence)
+    })
 
 
 if __name__ == '__main__':
