@@ -26,6 +26,7 @@ DATA_FILE_PATH = os.path.join(BASE_DIR, 'data', 'customer_support_dataset.csv')
 dashboard_cache = None
 
 
+# ---------------- AUTO RESPONSE ----------------
 def generate_auto_response(category):
     responses = {
         "Delivery Delay": "🚚 Your order is on the way. We apologize for the delay.",
@@ -40,22 +41,14 @@ def generate_auto_response(category):
     return responses.get(category, "Support team will assist you.")
 
 
+# ---------------- ESCALATION ----------------
 def escalation_logic(category, confidence):
     if category == "Ambiguous" or confidence < 0.6:
         return "⚠️ Escalated to Human Agent"
     return "✅ Handled by AI"
 
 
-@app.route('/api/dashboard')
-def dashboard():
-    global dashboard_cache
-
-    if dashboard_cache is None:
-        dashboard_cache = load_and_analyze_data(DATA_FILE_PATH)
-
-    return jsonify({"success": True, "data": dashboard_cache})
-
-
+# ---------------- CLASSIFY API ----------------
 @app.route('/api/classify', methods=['POST'])
 def classify():
     data = request.get_json()
@@ -78,5 +71,28 @@ def classify():
     })
 
 
+# ---------------- DASHBOARD API ----------------
+@app.route('/api/dashboard', methods=['GET'])
+def api_dashboard():
+    global dashboard_cache
+
+    try:
+        if dashboard_cache is None:
+            dashboard_cache = load_and_analyze_data(DATA_FILE_PATH)
+
+        return jsonify({
+            "success": True,
+            "data": dashboard_cache
+        })
+
+    except Exception as e:
+        logger.error(f"Dashboard error: {e}")
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        })
+
+
+# ---------------- RUN ----------------
 if __name__ == '__main__':
     app.run(debug=True)

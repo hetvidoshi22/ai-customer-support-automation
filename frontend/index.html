@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Customer Intelligence Dashboard</title>
+    <title>AI Customer Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,36 +12,41 @@
 
     <h1>🚀 AI Customer Intelligence Dashboard</h1>
 
-    <!-- Top Cards -->
+    <!-- Cards -->
     <div class="cards">
         <div class="card">
             <h3>Total Queries</h3>
-            <p id="totalQueries">120</p>
+            <p id="totalQueries">--</p>
         </div>
         <div class="card">
-            <h3>Categories</h3>
-            <p>8</p>
+            <h3>Total Categories</h3>
+            <p id="totalCategories">--</p>
         </div>
         <div class="card">
             <h3>Top Issue</h3>
-            <p>Product Issue</p>
+            <p id="topIssue">--</p>
         </div>
     </div>
 
-    <!-- Charts -->
-    <div class="chart-container">
+    <!-- Pie Chart -->
+    <div class="chart-box">
+        <h2>📊 Query Distribution</h2>
+        <p>Shows how customer queries are distributed across categories</p>
         <canvas id="pieChart"></canvas>
     </div>
 
-    <div class="chart-container">
+    <!-- Line Chart -->
+    <div class="chart-box">
+        <h2>📈 Daily Query Trend</h2>
+        <p>Tracks number of queries received each day</p>
         <canvas id="lineChart"></canvas>
     </div>
 
-    <!-- Query Section -->
+    <!-- Query Input -->
     <div class="query-box">
         <h2>🤖 Classify Customer Query</h2>
         <textarea id="queryInput" placeholder="Enter customer query..."></textarea>
-        <button onclick="classifyQuery()">⚡ Classify with AI</button>
+        <button id="classifyBtn">⚡ Classify with AI</button>
     </div>
 
     <!-- Result -->
