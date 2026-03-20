@@ -8,11 +8,11 @@ An AI-powered system designed to automate customer support by classifying querie
 
 To build a scalable AI workflow that:
 
-* Automatically analyzes incoming customer queries
-* Classifies them into predefined categories
-* Calculates percentage distribution of issues
-* Visualizes insights in a dashboard
-* Suggests automation strategies to reduce support workload
+- Automatically analyzes incoming customer queries  
+- Classifies them into predefined categories  
+- Calculates percentage distribution of issues  
+- Visualizes insights in a dashboard  
+- Automates responses and reduces support workload  
 
 ---
 
@@ -20,52 +20,66 @@ To build a scalable AI workflow that:
 
 ### 🤖 AI Query Classification
 
-* Uses **Google Gemini LLM** for natural language understanding
-* Handles real-world queries (including noisy and Hinglish text)
-* Hybrid approach:
-
-  * LLM-based classification
-  * Rule-based fallback for improved accuracy
+- Uses **Google Gemini LLM** for natural language understanding  
+- Handles real-world queries (including noisy and Hinglish text)  
+- Hybrid approach:
+  - LLM-based classification  
+  - Rule-based fallback for improved reliability  
 
 ---
 
 ### 📊 Analytics Dashboard
 
-* Displays:
-
-  * % distribution of issues (Pie Chart)
-  * Most common customer problem
-  * Total queries and category count
-  * Date range of dataset
-  * Built using **Chart.js + JavaScript**
+- Displays:
+  - % distribution of issues (Pie Chart)  
+  - Most common customer problem  
+  - Total queries and category count  
+- Built using **Chart.js + JavaScript**
 
 ---
 
 ### 📈 Trend Analysis
 
-* Shows **daily trends of customer issues**
-* Helps identify recurring problems over time
-* Useful for business decision-making
+- Shows **daily trends of customer queries**  
+- Helps identify recurring problems over time  
+- Enables data-driven decision-making  
 
 ---
 
 ### 💬 Automated Response System
 
-* Generates intelligent responses based on category
-* Example:
+- Automatically generates responses based on detected issue  
 
-  * Delivery Delay → “Your order is on the way...”
-  * Refund Request → “Your refund is being processed...”
+**Examples:**
+- Delivery Delay → “Your order is on the way...”  
+- Refund Request → “Your refund is being processed...”  
+- Payment Failure → “Try another payment method...”  
+
+---
+
+### ⚙️ Automation Engine
+
+The system not only classifies queries but also **takes automated actions**:
+
+| Category | Automation Action |
+|----------|-----------------|
+| Order Tracking | Sends tracking link |
+| Delivery Delay | Sends delay update |
+| Refund Request | Triggers refund workflow |
+| Product Issue | Creates support ticket |
+| Payment Failure | Suggests retry |
+| Subscription Issue | Provides self-service link |
+| General Query | Routes to FAQ bot |
+| Ambiguous | Requests clarification |
 
 ---
 
 ### ⚠️ Escalation Mechanism
 
-* Automatically escalates:
-
-  * Ambiguous queries
-  * Low-confidence predictions
-  * Helps reduce risk of incorrect automation
+- Automatically escalates:
+  - Ambiguous queries  
+  - Low-confidence predictions  
+- Ensures critical issues are handled by human agents  
 
 ---
 
@@ -73,21 +87,21 @@ To build a scalable AI workflow that:
 
 The system classifies queries into:
 
-* Order Tracking
-* Delivery Delay
-* Refund Request
-* Product Issue
-* Payment Failure
-* Subscription Issue
-* General Query
-* Ambiguous
+- Order Tracking  
+- Delivery Delay  
+- Refund Request  
+- Product Issue  
+- Payment Failure  
+- Subscription Issue  
+- General Query  
+- Ambiguous  
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Component       | Technology            |
-| --------------- | --------------------- |
+|----------------|----------------------|
 | Backend         | Python, Flask         |
 | AI Model        | Google Gemini API     |
 | Data Processing | Pandas                |
@@ -100,16 +114,14 @@ The system classifies queries into:
 ## 🧠 AI Categorization Logic
 
 ### 1. LLM-Based Classification
-
-* Uses Gemini API to understand context and intent
+- Uses Gemini API to understand intent and context  
 
 ### 2. Rule-Based Fallback
-
-* Handles edge cases like:
-
-  * Short queries
-  * Ambiguous inputs
-  * Improves reliability of predictions
+- Handles edge cases:
+  - Short queries  
+  - Typos / noisy input  
+  - Ambiguous text  
+- Ensures robustness and consistency  
 
 ---
 
@@ -121,31 +133,34 @@ The system classifies queries into:
 My order is late
 ```
 
-### Output:
 
-* Category: Delivery Delay
-* Confidence: 90%
-* Auto Response: “Your order is on the way...”
-* Escalation: Handled by AI
+### Output:
+- Category: Delivery Delay  
+- Confidence: 90%  
+- Auto Response: “Your order is on the way...”  
+- Automation: Delay update sent  
+- Escalation: Fully Automated  
 
 ---
 
 ## 🔄 Workflow Architecture
 
 ```
-User Query (WhatsApp / Instagram / Email)
+User Query (WhatsApp / Instagram / Email/ Website)
+        ↓
+Frontend UI Input 
         ↓
 Flask Backend API
         ↓
 Gemini AI Classification
         ↓
-Category Output
+Category Detection
         ↓
-Automation Engine (Response + Escalation)
+Automation Engine (Response + Action + Escalation)
         ↓
 Data Processing (Pandas)
         ↓
-Dashboard (Charts + Trends)
+Analytics Dashboard (Charts + Trends)
 ```
 
 ---
@@ -166,7 +181,7 @@ The system is designed to handle high query volumes using:
 
 ### 1. Install dependencies
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
