@@ -1,121 +1,202 @@
-query,category,timestamp
-"Where is my order?? it's been 5 days",Delivery Delay,2024-03-15
-"Payment failed but money deducted, pls check",Payment Failure,2024-03-12
-"Hey I want refund asap",Refund Request,2024-03-08
-"Product quality is not good at all",Product Issue,2024-03-18
-"How to cancel subscription?",Subscription Issue,2024-03-10
-"Bhai mere order ka kya hua? Track nhi ho rha",Order Tracking,2024-03-14
-"My package shows delivered but I didn't receive anything!!!",Delivery Delay,2024-03-17
-"The product i got is damaged badly need replacement",Product Issue,2024-03-11
-"refund kab milega??? already 10 days ho gye",Refund Request,2024-03-09
-"When will u restock the blue color variant",General Query,2024-03-16
-"Order #12345 status plz",Order Tracking,2024-03-13
-"I was charged twice for same order wtf",Payment Failure,2024-03-07
-"Can I change my delivery address? Order not shipped yet",Order Tracking,2024-03-15
-"Wrong item delivered! I ordered size M got size S",Product Issue,2024-03-12
-"why is delivery taking so long its been a week",Delivery Delay,2024-03-10
-"How do I pause my subscription for 2 months",Subscription Issue,2024-03-14
-"Product description says water resistant but it's not working",Product Issue,2024-03-09
-"Yaar refund process kitna time leta hai",Refund Request,2024-03-11
-"my order stuck in transit since 4 days any update?",Delivery Delay,2024-03-16
-"Payment successful but order not placed",Payment Failure,2024-03-08
-"Do you ship to Tier 3 cities",General Query,2024-03-13
-"Subscription renewed but I cancelled it last month!!",Subscription Issue,2024-03-17
-"Product broke after 2 days of use pathetic quality",Product Issue,2024-03-15
-"where's my refund it's been 2 weeks since return",Refund Request,2024-03-12
-"Is there any discount code available right now",General Query,2024-03-10
-"Order was supposed to arrive yesterday where is it",Delivery Delay,2024-03-14
-"Hey can u track my order for me",Order Tracking,2024-03-09
-"I need invoice for my last purchase",General Query,2024-03-16
-"The color is completely different from website photos",Product Issue,2024-03-11
-"Money got deducted 3 times but only 1 order placed help!",Payment Failure,2024-03-13
-"How to upgrade my subscription plan",Subscription Issue,2024-03-08
-"Ordered 3 items received only 2 where is 3rd one",Product Issue,2024-03-15
-"Refund initiated when will i get money in account",Refund Request,2024-03-17
-"Delivery partner is not responding to calls",Delivery Delay,2024-03-12
-"What is the return policy",General Query,2024-03-10
-"My tracking link is not working",Order Tracking,2024-03-14
-"Can i cancel my order its not shipped yet",Order Tracking,2024-03-09
-"subscription charge kyu hua i didnt renew",Subscription Issue,2024-03-16
-"Product smell is weird and chemical like",Product Issue,2024-03-11
-"Still waiting for refund approval been 5 days",Refund Request,2024-03-13
-"Expected delivery was today but no update",Delivery Delay,2024-03-08
-"Payment page froze but money deducted check plz",Payment Failure,2024-03-15
-"What size should i order im 5'8 and 75kg",General Query,2024-03-17
-"Why my order is still in processing",Order Tracking,2024-03-12
-"I want to return this item its not as expected",Refund Request,2024-03-10
-"Delivery guy marked delivered but didn't come",Delivery Delay,2024-03-14
-"Wrong product sent completely different from what i ordered",Product Issue,2024-03-09
-"How many days for delivery to Pune",General Query,2024-03-16
-"Transaction failed multiple times unable to place order",Payment Failure,2024-03-11
-"Can I change my subscription delivery date",Subscription Issue,2024-03-13
-"The stitching is coming off after 1 wash",Product Issue,2024-03-08
-"Haven't received refund yet its been 3 weeks",Refund Request,2024-03-15
-"Is my order confirmed or not? no confirmation mail received",Order Tracking,2024-03-17
-"Delivery delayed by 5 days this is unacceptable",Delivery Delay,2024-03-12
-"Charged for premium but not getting premium features",Subscription Issue,2024-03-10
-"Product size chart is wrong i ordered as per chart but doesn't fit",Product Issue,2024-03-14
-"How to get refund for cancelled order",Refund Request,2024-03-09
-"Order shows out for delivery since morning but not delivered yet",Delivery Delay,2024-03-16
-"Are your products vegan and cruelty free",General Query,2024-03-11
-"Kab tak aayega mera order?",Order Tracking,2024-03-13
-"Payment deducted twice pls refund extra amount",Payment Failure,2024-03-08
-"Subscription auto renewed without notification",Subscription Issue,2024-03-15
-"Product arrived broken box was damaged too",Product Issue,2024-03-17
-"Refund credited to wrong account",Refund Request,2024-03-12
-"Why is there no movement on my tracking since 3 days",Delivery Delay,2024-03-10
-"What's the difference between basic and premium plan",General Query,2024-03-14
-"Can u tell me where my package is right now",Order Tracking,2024-03-09
-"Order got cancelled automatically but money not refunded",Payment Failure,2024-03-16
-"How to unsubscribe i dont want it anymore",Subscription Issue,2024-03-11
-"Quality is very poor not worth the price",Product Issue,2024-03-13
-"When will my refund be processed",Refund Request,2024-03-08
-"Delivery expected today but now showing tomorrow why",Delivery Delay,2024-03-15
-"Do you have cash on delivery option",General Query,2024-03-17
-"My order id is not working on tracking page",Order Tracking,2024-03-12
-"Bank statement shows deduction but order failed",Payment Failure,2024-03-10
-"Subscription benefits are not activated",Subscription Issue,2024-03-14
-"Received expired product check manufacturing date",Product Issue,2024-03-09
-"Applied for refund 10 days ago no response",Refund Request,2024-03-16
-"Delivery agent called said address wrong but its correct",Delivery Delay,2024-03-11
-"Can I buy this product offline anywhere",General Query,2024-03-13
-"Still no update on my order placed 4 days back",Order Tracking,2024-03-08
-"Paid through UPI but order pending",Payment Failure,2024-03-15
-"How much does subscription cost per month",Subscription Issue,2024-03-17
-"Material quality is cheap looks fake",Product Issue,2024-03-12
-"Need refund urgently have to buy again",Refund Request,2024-03-10
-"Why delivery taking so much time",Delivery Delay,2024-03-14
-"Is there warranty on this product",General Query,2024-03-09
-"Bro track my order number AB12345",Order Tracking,2024-03-16
-"Payment successful but got error message confused",Payment Failure,2024-03-11
-"Cant login to my subscription account",Subscription Issue,2024-03-13
-"Packaging was open when received",Product Issue,2024-03-08
-"Refund amount is less than what i paid",Refund Request,2024-03-15
-"Out for delivery since 2 days what does that mean",Delivery Delay,2024-03-17
-"Do u ship internationally",General Query,2024-03-12
-"Where is my order its urgent",Order Tracking,2024-03-10
-"Transaction declined but amount on hold",Payment Failure,2024-03-14
-"When does subscription renew",Subscription Issue,2024-03-09
-"Color fading after first wash",Product Issue,2024-03-16
-"Refund status batao please",Refund Request,2024-03-11
-"Estimated delivery passed 3 days ago",Delivery Delay,2024-03-13
-"Hi",Ambiguous,2024-03-08
-"Need help",Ambiguous,2024-03-15
-"Hello there",Ambiguous,2024-03-17
-"Issue with my order",Ambiguous,2024-03-12
-"Not satisfied",Ambiguous,2024-03-10
-"This is wrong",Ambiguous,2024-03-14
-"What to do now",Ambiguous,2024-03-09
-"Please help me urgent",Ambiguous,2024-03-16
-"Problem",Ambiguous,2024-03-11
-"Check my account",Ambiguous,2024-03-13
-"My order is delayed and also the product quality seems bad from reviews",Delivery Delay,2024-03-15
-"Payment failed but i want to reorder can u help",Payment Failure,2024-03-17
-"Order not delivered yet and i need refund if it doesn't come today",Delivery Delay,2024-03-12
-"Wrong item received and delivery was also very late",Product Issue,2024-03-10
-"Subscription charged but order not placed what is this",Subscription Issue,2024-03-14
-"Refund pending and customer service not responding",Refund Request,2024-03-09
-"My order tracking shows delivered but product is damaged",Product Issue,2024-03-16
-"Payment got deducted twice and order is also delayed",Payment Failure,2024-03-11
-"Product damaged plus refund not processed yet very disappointed",Product Issue,2024-03-13
-"Order delayed already and now asking for more money for faster delivery??",Delivery Delay,2024-03-08
+query,category,timestamp,source
+Where is my order?,Order Tracking,2024-01-15,WhatsApp
+mera order kab ayega?,Order Tracking,2024-01-15,Instagram
+I haven't received my package yet,Delivery Delay,2024-01-16,Email
+refund?,Refund Request,2024-01-16,Website
+My product is damaged,Product Issue,2024-01-17,WhatsApp
+Payment failed but money deducted,Payment Failure,2024-01-17,Instagram
+Track order #12345,Order Tracking,2024-01-18,Email
+When will my order arrive,Order Tracking,2024-01-18,Website
+Product quality is very poor,Product Issue,2024-01-19,WhatsApp
+I want to cancel my subscription,Subscription Issue,2024-01-19,Instagram
+Still waiting for delivery,Delivery Delay,2024-01-20,Email
+Can I get a refund for this?,Refund Request,2024-01-20,Website
+Order status check karna hai,Order Tracking,2024-01-21,WhatsApp
+Payment not going through,Payment Failure,2024-01-21,Instagram
+Where's my stuff?,Order Tracking,2024-01-22,Email
+Delivery is late by 3 days,Delivery Delay,2024-01-22,Website
+How do I return this product,Refund Request,2024-01-23,WhatsApp
+Product different from description,Product Issue,2024-01-23,Instagram
+Track my shipment,Order Tracking,2024-01-24,Email
+Help,Ambiguous,2024-01-24,Website
+I need to speak to someone,General Query,2024-01-25,WhatsApp
+Order tracking link not working,Order Tracking,2024-01-25,Instagram
+Delivery delayed again,Delivery Delay,2024-01-26,Email
+Refund kab milega,Refund Request,2024-01-26,Website
+Wrong item received,Product Issue,2024-01-27,WhatsApp
+Payment gateway error,Payment Failure,2024-01-27,Instagram
+My order hasn't moved in days,Order Tracking,2024-01-28,Email
+Can you check my order status,Order Tracking,2024-01-28,Website
+Broken product recieved,Product Issue,2024-01-29,WhatsApp
+How to cancel subscription?,Subscription Issue,2024-01-29,Instagram
+Where is order number 67890,Order Tracking,2024-01-30,Email
+Delivery expected today but not arrived,Delivery Delay,2024-01-30,Website
+Want full refund,Refund Request,2024-01-31,WhatsApp
+Product size is wrong,Product Issue,2024-01-31,Instagram
+Transaction failed,Payment Failure,2024-02-01,Email
+Is my order shipped yet?,Order Tracking,2024-02-01,Website
+Still no delivery update,Delivery Delay,2024-02-02,WhatsApp
+How to get my money back,Refund Request,2024-02-02,Instagram
+What are your business hours,General Query,2024-02-03,Email
+Order nahi mila abhi tak,Order Tracking,2024-02-03,Website
+Product missing parts,Product Issue,2024-02-04,WhatsApp
+Payment declined,Payment Failure,2024-02-04,Instagram
+Tracking number doesn't work,Order Tracking,2024-02-05,Email
+Delivery guy never came,Delivery Delay,2024-02-05,Website
+Refund status check,Refund Request,2024-02-06,WhatsApp
+Subscription not cancelled,Subscription Issue,2024-02-06,Instagram
+When will order arrive?,Order Tracking,2024-02-07,Email
+hello,Ambiguous,2024-02-07,Website
+Product color is different,Product Issue,2024-02-08,WhatsApp
+Money deducted twice,Payment Failure,2024-02-08,Instagram
+Order status?,Order Tracking,2024-02-09,Email
+Delivery taking too long,Delivery Delay,2024-02-09,Website
+Return process kya hai,Refund Request,2024-02-10,WhatsApp
+Defective product received,Product Issue,2024-02-10,Instagram
+Track my package please,Order Tracking,2024-02-11,Email
+Do you ship internationally,General Query,2024-02-11,Website
+Order not delivered yet,Delivery Delay,2024-02-12,WhatsApp
+I want my money back now,Refund Request,2024-02-12,Instagram
+Payment error occurred,Payment Failure,2024-02-13,Email
+Whre is my ordr,Order Tracking,2024-02-13,Website
+Product looks fake,Product Issue,2024-02-14,WhatsApp
+How to pause subscription,Subscription Issue,2024-02-14,Instagram
+Expected delivery was yesterday,Delivery Delay,2024-02-15,Email
+Track order,Order Tracking,2024-02-15,Website
+Refund not received,Refund Request,2024-02-16,WhatsApp
+Item damaged in shipping,Product Issue,2024-02-16,Instagram
+Payment unsuccessful,Payment Failure,2024-02-17,Email
+Kya,Ambiguous,2024-02-17,Website
+Mera order kaha hai,Order Tracking,2024-02-18,WhatsApp
+Delivery delayed by a week,Delivery Delay,2024-02-18,Instagram
+How long for refund?,Refund Request,2024-02-19,Email
+Product warranty info,General Query,2024-02-19,Website
+Order still in transit,Order Tracking,2024-02-20,WhatsApp
+Wrong product delivered,Product Issue,2024-02-20,Instagram
+Card charged but order failed,Payment Failure,2024-02-21,Email
+When is my order coming,Order Tracking,2024-02-21,Website
+Delivery not attempted,Delivery Delay,2024-02-22,WhatsApp
+Return window closed already?,Refund Request,2024-02-22,Instagram
+Subscription charge repeated,Subscription Issue,2024-02-23,Email
+Order tracking update?,Order Tracking,2024-02-23,Website
+Product quality complaint,Product Issue,2024-02-24,WhatsApp
+Payment processing issue,Payment Failure,2024-02-24,Instagram
+Delayed shipment again,Delivery Delay,2024-02-25,Email
+Can I change my order?,General Query,2024-02-25,Website
+Order nhi aaya,Order Tracking,2024-02-26,WhatsApp
+Refund initiated when?,Refund Request,2024-02-26,Instagram
+Product packaging damaged,Product Issue,2024-02-27,Email
+Payment method not accepted,Payment Failure,2024-02-27,Website
+Where is my parcel?,Order Tracking,2024-02-28,WhatsApp
+Delivery person unreachable,Delivery Delay,2024-02-28,Instagram
+Want to return item,Refund Request,2024-02-29,Email
+How do I cancel order,General Query,2024-02-29,Website
+Order kab tak aayega?,Order Tracking,2024-03-01,WhatsApp
+Product not as shown,Product Issue,2024-03-01,Instagram
+Transaction pending,Payment Failure,2024-03-02,Email
+Tracking shows delivered but not received,Order Tracking,2024-03-02,Website
+Waited too long for delivery,Delivery Delay,2024-03-03,WhatsApp
+Full refund chahiye,Refund Request,2024-03-03,Instagram
+Unsubscribe me please,Subscription Issue,2024-03-04,Email
+???,Ambiguous,2024-03-04,Website
+Check order #54321,Order Tracking,2024-03-05,WhatsApp
+Product seal broken,Product Issue,2024-03-05,Instagram
+Payment failed error,Payment Failure,2024-03-06,Email
+Order delayed,Delivery Delay,2024-03-06,Website
+How to get refund,Refund Request,2024-03-07,WhatsApp
+What is return policy,General Query,2024-03-07,Instagram
+My order please?,Order Tracking,2024-03-08,Email
+Product expired,Product Issue,2024-03-08,Website
+Money not refunded yet,Payment Failure,2024-03-09,WhatsApp
+Subscription renewal issue,Subscription Issue,2024-03-09,Instagram
+Order status update needed,Order Tracking,2024-03-10,Email
+Package not arrived,Delivery Delay,2024-03-10,Website
+Refund request submit kiya tha,Refund Request,2024-03-11,WhatsApp
+Received incomplete order,Product Issue,2024-03-11,Instagram
+Payment page not loading,Payment Failure,2024-03-12,Email
+Track package,Order Tracking,2024-03-12,Website
+Expected delivery missed,Delivery Delay,2024-03-13,WhatsApp
+Return label needed,Refund Request,2024-03-13,Instagram
+Can I upgrade my subscription,Subscription Issue,2024-03-14,Email
+Hi there,Ambiguous,2024-03-14,Website
+Where's my order,Order Tracking,2024-03-15,WhatsApp
+Product smells weird,Product Issue,2024-03-15,Instagram
+Payment declined by bank,Payment Failure,2024-03-16,Email
+Delivery status?,Delivery Delay,2024-03-16,Website
+Refund process?,Refund Request,2024-03-17,WhatsApp
+Do you have customer service,General Query,2024-03-17,Instagram
+Order tracking info,Order Tracking,2024-03-18,Email
+Missing items from order,Product Issue,2024-03-18,Website
+Transaction error,Payment Failure,2024-03-19,WhatsApp
+Order still not here,Delivery Delay,2024-03-19,Instagram
+Money back guarantee?,Refund Request,2024-03-20,Email
+Subscription auto-renewed,Subscription Issue,2024-03-20,Website
+Mera package kahan hai,Order Tracking,2024-03-21,WhatsApp
+Product leaking,Product Issue,2024-03-21,Instagram
+Payment issue fix karo,Payment Failure,2024-03-22,Email
+Order kal tak aayega?,Order Tracking,2024-03-22,Website
+Courier delayed delivery,Delivery Delay,2024-03-23,WhatsApp
+Refund to original payment method,Refund Request,2024-03-23,Instagram
+what,Ambiguous,2024-03-24,Email
+Contact customer support,General Query,2024-03-24,Website
+Order not shipped,Order Tracking,2024-03-25,WhatsApp
+Product counterfeit,Product Issue,2024-03-25,Instagram
+Payment gateway timeout,Payment Failure,2024-03-26,Email
+Delivery attempted when I was home,Delivery Delay,2024-03-26,Website
+Refund timeline?,Refund Request,2024-03-27,WhatsApp
+Cancel my subscription now,Subscription Issue,2024-03-27,Instagram
+Order tracking please,Order Tracking,2024-03-28,Email
+Shipping address wrong,General Query,2024-03-28,Website
+Package lost?,Order Tracking,2024-03-29,WhatsApp
+Product not working,Product Issue,2024-03-29,Instagram
+Card payment failed,Payment Failure,2024-03-30,Email
+Delivery postponed again,Delivery Delay,2024-03-30,Website
+Exchange instead of refund,Refund Request,2024-03-31,WhatsApp
+Subscription benefits,Subscription Issue,2024-03-31,Instagram
+Where is order,Order Tracking,2024-04-01,Email
+Product photos misleading,Product Issue,2024-04-01,Website
+Payment not processed,Payment Failure,2024-04-02,WhatsApp
+Late delivery compensation,Delivery Delay,2024-04-02,Instagram
+Refund kab tak,Refund Request,2024-04-03,Email
+Track my order please,Order Tracking,2024-04-03,Website
+Product instructions missing,Product Issue,2024-04-04,WhatsApp
+Tried paying multiple times,Payment Failure,2024-04-04,Instagram
+Delivery time?,Delivery Delay,2024-04-05,Email
+Refund policy?,General Query,2024-04-05,Website
+Order update,Order Tracking,2024-04-06,WhatsApp
+Item not as described,Product Issue,2024-04-06,Instagram
+Payment confirmation not received,Payment Failure,2024-04-07,Email
+Parcel delayed,Delivery Delay,2024-04-07,Website
+Need refund urgently,Refund Request,2024-04-08,WhatsApp
+Subscription charged twice,Subscription Issue,2024-04-08,Instagram
+Order kaha hai,Order Tracking,2024-04-09,Email
+Product packaging poor,Product Issue,2024-04-09,Website
+Transaction not completed,Payment Failure,2024-04-10,WhatsApp
+Delivery expected but didnt come,Delivery Delay,2024-04-10,Instagram
+How to return,Refund Request,2024-04-11,Email
+Order arriving when,Order Tracking,2024-04-11,Website
+Product warranty claim,Product Issue,2024-04-12,WhatsApp
+Payment issue help,Payment Failure,2024-04-12,Instagram
+Still waiting,Delivery Delay,2024-04-13,Email
+Order location?,Order Tracking,2024-04-13,Website
+Refund amount wrong,Refund Request,2024-04-14,WhatsApp
+Billing issue,General Query,2024-04-14,Instagram
+ok,Ambiguous,2024-04-15,Email
+Order?,Order Tracking,2024-04-15,Website
+Order not yet dispatched,Order Tracking,2024-04-16,WhatsApp
+Product torn,Product Issue,2024-04-16,Instagram
+Payment rejection,Payment Failure,2024-04-17,Email
+Delivery person said come tomorrow,Delivery Delay,2024-04-17,Website
+Refund approved but not credited,Refund Request,2024-04-18,WhatsApp
+Subscription downgrade option,Subscription Issue,2024-04-18,Instagram
+Jaldi bhejo please,Order Tracking,2024-04-19,Email
+Product warranty expired,Product Issue,2024-04-19,Website
+Payment retry failed,Payment Failure,2024-04-20,WhatsApp
+Parcel rescheduled,Delivery Delay,2024-04-20,Instagram
+Store credit instead?,Refund Request,2024-04-21,Email
+Where product,Order Tracking,2024-04-21,Website
+Item stained,Product Issue,2024-04-22,WhatsApp
+UPI payment issue,Payment Failure,2024-04-22,Instagram
+Shipment delayed,Delivery Delay,2024-04-23,Email
+Refund update,Refund Request,2024-04-23,Website
+Subscription plan change,Subscription Issue,2024-04-24,WhatsApp

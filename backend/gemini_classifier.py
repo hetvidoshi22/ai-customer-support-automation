@@ -16,13 +16,13 @@ def rule_based_fallback(query):
     elif len(q.strip()) < 5:
         return "Ambiguous"
 
-    return None
+    return "General Query"
 
 
 def classify_query_with_gemini(query):
     try:
         prompt = f"""
-        Classify this query into:
+        Classify this query into one category:
         [Order Tracking, Delivery Delay, Refund Request, Product Issue, Payment Failure, Subscription Issue, General Query, Ambiguous]
 
         Query: "{query}"
@@ -33,13 +33,16 @@ def classify_query_with_gemini(query):
         response = model.generate_content(prompt)
         category = response.text.strip()
 
-        fallback = rule_based_fallback(query)
+        allowed = [
+            "Order Tracking", "Delivery Delay", "Refund Request",
+            "Product Issue", "Payment Failure", "Subscription Issue",
+            "General Query", "Ambiguous"
+        ]
 
-        if category == "Ambiguous" and fallback:
-            return fallback
+        if category not in allowed:
+            return rule_based_fallback(query)
 
         return category
 
     except:
-        fallback = rule_based_fallback(query)
-        return fallback if fallback else "Ambiguous"
+        return rule_based_fallback(query)
